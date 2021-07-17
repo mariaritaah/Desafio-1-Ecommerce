@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css"/>	
+		 <title>Cadastro Cliente - JS</title>
+		<script type= "text/javascript" src="js/script.js" ></script>
+	
+	</head>
+	<body>	
+	<fieldset>
+			<center>
+			<h1>Cadastro de Cliente</h1>
+			<form name="form1">
+			</center>
+			  <p><label type="nome">Nome: </label>
+			  <p><td align="left"></td><p>
+              <input type="text" name="nome"><p>
+			  <p><label type="cpf">CPF: </label>
+			  <p><td align="left"></td><p>
+              <input id="valida" name="cpf" required="required" pattern="[0-9]+$" maxlength="11" size="11" placeholder="CPF só número" onblur="TestaCPF(this.value)"><p>
+		      <p><label type="email">E-mail: </label>
+			  <p><td align="left"></td><p>
+              <input name="email" type="text"><p>
+			  <p><label type="telefone">Telefone: </label>
+			  <p><td align="left"></td><p>
+              <input type="text" name="telefone" id="telefone" size="20" maxlength="14" onkeypress="mascara(this)"> 
+			  <p><label type="cidade">Cidade: </label>
+			  <p><td align="left"></td><p>
+              <input type="text" cidade="Cidade"><p>
+			<p><label type="sexo">Sexo: </label>
+			<p><input type="radio" name=" sexo" value=" feminino"> Feminino</br><p>
+			<p><input type="radio" name=" sexo" value="masculino"> Masculino</br><p>
+			</fieldset>
+			<p>
+			<center>
+			<input type="submit" onclick="validarFormulario()">
+			<input type="reset" value="Limpar">
+			<a href="index.html"><input type="button"value="Cancelar"></a>
+			</br/><p>
+			</center>
+			</form>
+		
+    </body>	
+</html>
